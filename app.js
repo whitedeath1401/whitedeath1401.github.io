@@ -45,6 +45,7 @@ const inputDiagnosisOK = document.querySelector('#inputDiagnosisOK');
 const toggleDiagnosisOKKapital = document.querySelector('#toggleDiagnosisOKKapital');
 const inputPlanOK = document.querySelector('#inputPlanOK');
 const togglePlanOKKapital = document.querySelector('#togglePlanOKKapital');
+const toggleAnestesiOK = document.querySelector('#toggleAnestesiOK');
 const inputOkOK = document.querySelector('#inputOkOK');
 const inputJamOK = document.querySelector('#inputJamOK');
 const inputDokterOK = document.querySelector('#inputDokterOK');
@@ -57,6 +58,7 @@ let outputRmOK;
 let outputBangsalOK;
 let outputDiagnosisOK;
 let outputPlanOK;
+let outputAnestesiOK;
 let outputOkOK;
 let outputJamOK;
 let outputDokterOK;
@@ -323,6 +325,7 @@ tombolOK.addEventListener('click', () => {
     outputPlanOK = inputPlanOK.value;
   }
 
+  outputAnestesiOK = inputAnestesiOK.value.toUpperCase()
   outputOkOK = formatOkOK(inputOkOK.value);
   outputJamOK = jamFix(inputJamOK.value);
   outputDokterOK = timDokterOK(inputDokterOK.value.toUpperCase());
@@ -336,6 +339,7 @@ tombolOK.addEventListener('click', () => {
     bangsal: outputBangsalOK,
     diagnosis: outputDiagnosisOK,
     plan: outputPlanOK,
+    anestesi: outputAnestesiOK,
     ok: outputOkOK,
     jam: outputJamOK,
     dokter: outputDokterOK,
@@ -349,7 +353,7 @@ tombolOK.addEventListener('click', () => {
   <br>Tx : ${dataPasienOK[urutanPasienOhMinSatu]['plan']}
   <br>DPJP : ${dataPasienOK[urutanPasienOhMinSatu]['dokterLengkap']}
   <br>OK : ${dataPasienOK[urutanPasienOhMinSatu]['ok']} Jam ${dataPasienOK[urutanPasienOhMinSatu]['jam']}
-  <br>Anestesi : GA
+  <br>Anestesi : ${dataPasienOK[urutanPasienOhMinSatu]['anestesi']}
   <br>
   <br>
   `
@@ -367,6 +371,7 @@ tombolOK.addEventListener('click', () => {
   inputBangsalOK.value = '';
   inputDiagnosisOK.value = '';
   inputPlanOK.value = '';
+  inputAnestesiOK.value = '';
   inputOkOK.value = '';
   inputJamOK.value = '';
   inputDokterOK.value = '';
