@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="containerHTB">
+      <h1>HTB</h1>
+      <form class="pengaturanForm" action="index.html" method="post">
+
+        <div class="aturMargin aturMarginH1">
+          <label for="inputHari" class="kiri">Hari:</label>
+          <input type="text" name="inputHari" value="" id="inputHari">
+        </div>
+
+        <div class="aturMargin">
+          <label for="inputTanggal" class="kiri">Tanggal:</label>
+          <input type="text" name="inputTanggal" value="" id="inputTanggal">
+        </div>
+
+        <div class="aturMargin">
+          <label for="inputBulan" class="kiri">Bulan:</label>
+          <input type="text" name="inputBulan" value="" id="inputBulan">
+        </div>
+
+        <button type="button" name="button" id="tombolHTB">tombol HTB</button>
+      </form>
+    </div>
+
+    <div id="containerOK">
+      <h1 id="toggleFormOK">OK</h1>
+      <div id="containerFormOK">
+        <form class="pengaturanForm" action="index.html" method="post">
+
+          <div class="aturMargin aturMarginH1">
+            <label for="inputRmOK">RM:</label>
+            <input type="text" name="inputRmOK" value="" id="inputRmOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputNamaOK">Nama:</label>
+            <input type="text" name="inputNamaOK" value="" id="inputNamaOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputKelaminOK">Kelamin:</label>
+            <input type="text" name="inputKelaminOK" value="" id="inputKelaminOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputUmurOK">Umur:</label>
+            <input type="text" name="inputUmurOK" value="" id="inputUmurOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputBangsalOK">Bangsal:</label>
+            <input type="text" name="inputBangsalOK" value="" id="inputBangsalOK">
+          </div>
+          <div class="aturMargin">
+            <label for="toggleDiagnosisOKKapital"></label>
+            <input type="checkbox" name="toggleDiagnosisOKKapital" value="" id="toggleDiagnosisOKKapital">
+            <label for="inputDiagnosisOK">Diagnosis:</label>
+            <input type="text" name="inputDiagnosisOK" value="" id="inputDiagnosisOK">
+          </div>
+          <div class="aturMargin">
+            <label for="togglePlanOKKapital"></label>
+            <input type="checkbox" name="togglePlanOKKapital" value="" id="togglePlanOKKapital">
+            <label for="inputPlanOK">Plan:</label>
+            <input type="text" name="inputPlanOK" value="" id="inputPlanOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputDokterOK">Dokter:</label>
+            <input type="text" name="inputDokterOK" value="" id="inputDokterOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputOkOK">OK:</label>
+            <input type="text" name="inputOkOK" value="" id="inputOkOK">
+          </div>
+          <div class="aturMargin">
+            <label for="inputJamOK">Jam:</label>
+            <input type="text" name="inputJamOK" value="" id="inputJamOK">
+          </div>
+
+            <button type="button" name="button" id="tombolOK">tombol OK</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="" id="selesai">
+      <h1 id="toggleSelesai">SELESAI</h1>
+    </div>
+
+    <div class="none" id="containerJadwalOperasi">
+      <h1 id="toggleJadwalOperasi">Jadwal Operasi</h1>
+      <div id="jadwalOperasi">
+        <p id="izinOperasi">Mohon Izin Dokter, Chief dan Kakak kelas, izin melaporkan rencana operasi Bedah Onkologi
+</p>
+
+        <div id="jadwalOK" class="none">
+        </div>
+        <p id="paddingBantuan">Terima kasih</p>
+
+      </div>
+    </div>
+
+  </body>
+  <script type="text/javascript" src="app.js">
+
+  </script>
+</html>
