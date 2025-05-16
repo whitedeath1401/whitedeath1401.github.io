@@ -348,7 +348,7 @@ tombolOK.addEventListener('click', () => {
 
   let listPasienOK = document.createElement('div');
   listPasienOK.innerHTML += `
-  ${urutanPasienOK}. *${dataPasienOK[urutanPasienOhMinSatu]['nama']}, ${dataPasienOK[urutanPasienOhMinSatu]['kelamin']}, ${dataPasienOK[urutanPasienOhMinSatu]['umur']} th, ${dataPasienOK[urutanPasienOhMinSatu]['rm']}, ${dataPasienOK[urutanPasienOhMinSatu]['bangsal']}, dr. ${dataPasienOK[urutanPasienOhMinSatu]['dokter']}*
+  * ${urutanPasienOK}. ${dataPasienOK[urutanPasienOhMinSatu]['nama']}, ${dataPasienOK[urutanPasienOhMinSatu]['kelamin']}, ${dataPasienOK[urutanPasienOhMinSatu]['umur']} th, ${dataPasienOK[urutanPasienOhMinSatu]['rm']}, ${dataPasienOK[urutanPasienOhMinSatu]['bangsal']}, dr. ${dataPasienOK[urutanPasienOhMinSatu]['dokter']}*
   <br>Dx : ${dataPasienOK[urutanPasienOhMinSatu]['diagnosis']}
   <br>Tx : ${dataPasienOK[urutanPasienOhMinSatu]['plan']}
   <br>DPJP : ${dataPasienOK[urutanPasienOhMinSatu]['dokterLengkap']}
@@ -378,8 +378,8 @@ tombolOK.addEventListener('click', () => {
 })
 
 // TOGGLE
-document.querySelector('#toggleFormOH').addEventListener('click', () => {
-  document.querySelector('#containerFormOH').classList.toggle('none');
+document.querySelector('#toggleFormOK').addEventListener('click', () => {
+  document.querySelector('#containerFormOK').classList.toggle('none');
 })
 
 document.querySelector('#toggleJadwalOperasi').addEventListener('click', () => {
