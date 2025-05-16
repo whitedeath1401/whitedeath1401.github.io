@@ -348,7 +348,7 @@ tombolOK.addEventListener('click', () => {
 
   let listPasienOK = document.createElement('div');
   listPasienOK.innerHTML += `
-  * ${urutanPasienOK}. ${dataPasienOK[urutanPasienOhMinSatu]['nama']}, ${dataPasienOK[urutanPasienOhMinSatu]['kelamin']}, ${dataPasienOK[urutanPasienOhMinSatu]['umur']} th, ${dataPasienOK[urutanPasienOhMinSatu]['rm']}, ${dataPasienOK[urutanPasienOhMinSatu]['bangsal']}, dr. ${dataPasienOK[urutanPasienOhMinSatu]['dokter']}*
+  *${urutanPasienOK}. ${dataPasienOK[urutanPasienOhMinSatu]['nama']}, ${dataPasienOK[urutanPasienOhMinSatu]['kelamin']}, ${dataPasienOK[urutanPasienOhMinSatu]['umur']} th, ${dataPasienOK[urutanPasienOhMinSatu]['rm']}, ${dataPasienOK[urutanPasienOhMinSatu]['bangsal']}, dr. ${dataPasienOK[urutanPasienOhMinSatu]['dokter']}*
   <br>Dx : ${dataPasienOK[urutanPasienOhMinSatu]['diagnosis']}
   <br>Tx : ${dataPasienOK[urutanPasienOhMinSatu]['plan']}
   <br>DPJP : ${dataPasienOK[urutanPasienOhMinSatu]['dokterLengkap']}
